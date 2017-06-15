@@ -1,0 +1,16 @@
+PODS:
+  - QCloudCOSV4 (1.1.4)
+
+DEPENDENCIES:
+  - QCloudCOSV4 (from `../`)
+
+EXTERNAL SOURCES:
+  QCloudCOSV4:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  QCloudCOSV4: 4ab47b1fd5dd8cb374223b9feee38ea98ec54f50
+
+PODFILE CHECKSUM: fdba1a45ccfd2d2dc19900041ab9e69109771b35
+
+COCOAPODS: 1.2.1
