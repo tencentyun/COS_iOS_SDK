@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A4877991F160DE5008B3FD9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		374050A7C2AC2CDD3189C2B0 /* Pods-COSTestDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COSTestDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-COSTestDemoUITests/Pods-COSTestDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		377DD2E9C94CCBF8011F1291 /* Pods-COSTestDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-COSTestDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-COSTestDemo/Pods-COSTestDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4601E4991DAE484400A16530 /* QCloudUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCloudUtils.h; sourceTree = "<group>"; };
@@ -112,6 +113,7 @@
 		46278CCF1E0AAA0500537514 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1A4877991F160DE5008B3FD9 /* CoreTelephony.framework */,
 				46278CD61E0AAA1F00537514 /* Security.framework */,
 				46278CD41E0AAA1900537514 /* SystemConfiguration.framework */,
 				46278CD21E0AAA0D00537514 /* libz.tbd */,

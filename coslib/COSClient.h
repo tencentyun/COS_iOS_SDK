@@ -5,7 +5,9 @@
  @abstract 文件上传接口
  
  @author Created by baron on 16/1/24.
-  
+ 
+ @version 1.2.0 16/1/24 Creation
+ 
  */
 
 #import <Foundation/Foundation.h>
@@ -56,6 +58,15 @@ typedef void (^COSCommandCompletionHandler)(COSTaskRsp *resp);
 
 //地域
 @property (nonatomic, strong) NSString   *region;
+/**
+ default is "file.myqcloud.com", if you use the dynamic speed function, you can set this property to changed the service host. 
+ 
+ eg. if your speed host is "jiasutest.coshelperxx.com", you set serviceHostSubfix = @"coshelperxx.com" and region = @"jiasutest"
+
+ @warning default is "file.myqcloud.com"
+ @since 1.4.2
+ */
+@property (nonatomic, strong) NSString  *serviceHostSubfix;
 @property (nonatomic, strong) NSString   *log;
 /*!
  @abstract SDK版本号
@@ -96,7 +107,6 @@ typedef void (^COSCommandCompletionHandler)(COSTaskRsp *resp);
 
 /*!
  @abstract 文件上传方法
- @abstract 只要task 被上传过，只要重新调用putObject，即可实现分片断点续传上传
  @param COSObjectPutTask：文件上传任务
  */
 - (BOOL)putObject:(COSObjectPutTask *)task;
@@ -104,10 +114,11 @@ typedef void (^COSCommandCompletionHandler)(COSTaskRsp *resp);
 -(BOOL)putObjectMultipart:(COSObjectMultipartPutTask *)task;
 
 
-///*!
-// @abstract 文件分片断点续传上传功能使用 putObject 即可以实现
-// */
-//- (BOOL)ObjectResumePutMultipart:(COSObjectMultipartResumePutTask *)task;
+/*!
+ @abstract 文件分片断点续传上传
+ @param COSObjectMultipartResumePutTask 文件续传的任务
+ */
+- (BOOL)ObjectResumePutMultipart:(COSObjectMultipartResumePutTask *)task;
 
 /*!
  @abstract 文件下载函数

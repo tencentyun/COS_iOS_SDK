@@ -1,5 +1,5 @@
 PODS:
-  - QCloudCOSV4 (1.1.4)
+  - QCloudCOSV4 (1.4.0)
 
 DEPENDENCIES:
   - QCloudCOSV4 (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  QCloudCOSV4: 4ab47b1fd5dd8cb374223b9feee38ea98ec54f50
+  QCloudCOSV4: dcaf21276d7764c3179824c44088ad79520820cd
 
 PODFILE CHECKSUM: fdba1a45ccfd2d2dc19900041ab9e69109771b35
 

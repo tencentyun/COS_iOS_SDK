@@ -13,4 +13,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/tencentyun/COS_iOS_SDK.git", :tag => s.version.to_s }
   s.source_files  = 'coslib/**/*.{h,m}'
   s.vendored_libraries = 'coslib/libCOSClient.a'
+  s.frameworks = "CoreTelephony", "Foundation", "SystemConfiguration"
 end
