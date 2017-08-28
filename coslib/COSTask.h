@@ -46,7 +46,7 @@
 @interface COSObjectPutTask : COSUploadTask <NSCoding>
 @property (nonatomic, assign)    BOOL  insertOnly;
 @property (nonatomic, assign)    BOOL  multipartUpload;
-
+@property (nonatomic, copy)      NSString* cosMetaMagicContext;
 
 
 
@@ -76,6 +76,7 @@
 @interface COSObjectMultipartPutTask : COSUploadTask <NSCoding>
 
 @property (nonatomic, assign)    BOOL  insertOnly;
+@property (nonatomic, copy)  NSString* cosMetaMagicContext;
 
 
 -(instancetype)init;
@@ -399,6 +400,8 @@ typedef NS_ENUM(NSInteger, COSFileAuthorityType)
 @property (nonatomic, strong)    NSDictionary           *data;
 /** 成功后，后台返回文件数据*/
 @property (nonatomic, strong)    NSDictionary           *fileData;
+
+@property (nonatomic, copy)      NSString               *vid;
 
 @end
 
