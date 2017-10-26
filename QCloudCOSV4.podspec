@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "QCloudCOSV4"
-  s.version      = "1.5.2"
+  s.version      = "1.5.3"
   s.summary      = "腾讯云对象存储服务COS，iOS-SDK"
   s.description  = <<-DESC
                   腾讯云对象存储服务COS，iOS-SDK。提供文件上传等基本操作。
