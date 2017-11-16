@@ -418,6 +418,11 @@ typedef NS_ENUM(NSInteger, COSFileAuthorityType)
 /** 成功后，后台返回文件的https url */
 @property (nonatomic, strong)    NSString               *httpsURL;
 
+/**
+ 上传成功后，返回的URL。该URL没有经过URL Encode, 可以拿着该URL去下载文件。
+ */
+@property (nonatomic, copy)      NSString               *objectURL;
+
 @end
 
 /**
