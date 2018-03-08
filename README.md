@@ -1,3 +1,9 @@
+## 重要提示
+如果你是新接入 COS SDK的用户，<font color=red>**请勿接入该版本的SDK**</font>。    
+
+对于新接入 COS SDK的用户，我们推荐使用[基于 XML API 封装的SDK](https://cloud.tencent.com/document/product/436/11280)。如果是因为种种原因仍需要使用基于 JSON API 封装的 SDK , 请使用[重构的 V4 SDK](https://github.com/tencentyun/qcloud-sdk-ios/tree/master/QCloudNewCOSV4)。    
+
+
 ## 开发准备
 
 ### SDK 获取
@@ -715,7 +721,7 @@ COSClient *client= [[COSClient alloc] initWithAppId:appId withRegion:[Congfig in
 
 #### 方法原型
 
-调用此接口进行文件的上传操作，具体步骤如下：
+调用此接口进行文件的下载操作，具体步骤如下：
 
 1. 实例化 COSObjectPutTask ；
 2. 调用 COSClient 对象的 putObject 方法，将 之前上传过的COSObjectPutTask  对象传入；
