@@ -82,7 +82,6 @@ alpha:1.0]
     task.bucket = bucket;
     task.attrs = @"customAttribute";
     task.directory = dir;
-    task.insertOnly = YES;
     task.sign = _sign;
     
     __weak UITextView *temp = imgUrl;
@@ -492,7 +491,6 @@ alpha:1.0]
     task.bucket = bucket;
     task.attrs = @"customAttribute";
     task.directory = dir;
-    task.insertOnly = YES;
     task.sign = _sign;
     //call back
     __weak UITextView *temp = imgUrl;
